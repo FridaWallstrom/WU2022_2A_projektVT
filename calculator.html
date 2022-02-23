@@ -7,7 +7,7 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="calc_body">
     <nav>
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -21,6 +21,40 @@
             <div id="line_3", class="burger_line"></div>
         </div>
     </nav>
+
+    <form method="post">
+            <ul id="calculator_forms">
+                <li>
+                    <label for="Stock">Stock</label>
+                    <select name="value" class="calculator_input" placeholder="-">
+                        <option value="-">-</option>
+                        <option value="Academedia">Academedia</option>
+                        <option value="Swedbank">Swedbank</option>
+                        <option value="Handelsbanken">Handelsbanken</option>
+                        <option value="SBB">Samhällsbyggnadsbolaget</option>
+                        <option value="Tethy">Tethys oil</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="stock">Stock</label>
+                    <input type="text" class="calculator_input" name="stock" required="required">
+                </li>
+                <li>
+                    <label for="value">Value</label>
+                    <input type="number" name="value" class="calculator_input" required="required">
+                </li>
+                <li>
+                    <label for="value">Value</label>
+                    <input type="number" name="value" class="calculator_input" required="required">
+                </li>
+                <li>
+                    <label for="value">Value</label>
+                    <input type="number" name="value" class="calculator_input" required="required">
+                </li>
+                <button type="submit" class="button">Submit</button>
+            </ul>
+    </form>
+
     <script src="js/script.js"></script>
 </body>
 </html>
