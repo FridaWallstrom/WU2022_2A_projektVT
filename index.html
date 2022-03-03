@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>SVC</h1>
     <nav>
+        <h1>SVC</h1>
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="calculator.html">Calculator</a></li>
@@ -18,22 +18,41 @@
         </ul>
         <form>
             <input type="text" id="search" placeholder="Search..">
+            <img src="img/search_icon.png" id="search_icon">
         </form>
         <div id="burger">
             <div id="line_1", class="burger_line"></div>
             <div id="line_3", class="burger_line"></div>
         </div>
     </nav>
-    <div id="home">
-        <div id="calculate">
-            <img src="img/computer.jpg" alt="bild på dator" class="home_image">
-        </div>
-        <div id="evaluate">
-            <img src="img/office.jpg" alt="bild på kontor" class="home_image">
-        </div>
-        <div id="revolutionize"></div>
-            <img src="img/stock.jpg" alt="bild på aktie" class="home_image">
-    </div>
     <script src="js/script.js"></script>
+
+    <footer>
+        <h3>Contact Information</h3>
+        <ul id="contacts">
+            <li>Email: svc@gmail.com</li>
+            <li>Tel: 031-16 70 28</li>
+            <li>Tel: 070-420 69 02</li>
+        </ul>
+        <ul id="address">
+            <li>St: Sesame Street 12</li>
+            <li>zip: 418 58 City</li>
+        </ul>
+    </footer>
+
+    <div id="home_wrapper">
+        <section id="calculate">
+            <h2 id="home_image_text">Calculate</h2>
+            <img src="img/computer.jpg" alt="bild på dator" class="home_image">
+        </section>
+        <section id="evaluate">
+            <h2 id="home_image_text">Evaluate</h2>
+            <img src="img/office.jpg" alt="bild på kontor" class="home_image">
+        </section>
+        <section id="revolutionize"></div>
+            <h2 id="home_image_text">Revolutionize</h2>
+            <img src="img/stock.jpg" alt="bild på aktie" class="home_image">
+        </section>
+     </div>
 </body>
 </html>

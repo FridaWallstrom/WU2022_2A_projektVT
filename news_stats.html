@@ -9,13 +9,17 @@
 </head>
 <body>
     <nav>
+        <h1>SVC</h1>
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="calculator.html">Calculator</a></li>
             <li><a href="news_stats.html">News & Statistics</a></li>
             <li><a href="about_us.html">About Us</a></li>
         </ul>
-
+        <form>
+            <input type="text" id="search" placeholder="Search..">
+            <img src="img/search_icon.png" id="search_icon">
+        </form>
         <div id="burger">
             <div id="line_1", class="burger_line"></div>
             <div id="line_3", class="burger_line"></div>
@@ -23,19 +27,53 @@
     </nav>
     <script src="js/script.js"></script>
 
-    <div id="news_wrapper">
-        <p id="headline1" class="headline">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tempore eaque magnam esse dicta iure? Ipsam, quaerat. Alias dolorum ipsa reiciendis quibusdam animi sunt ut, rerum, eveniet dolor iste error.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tempore eaque magnam esse dicta iure? Ipsam, quaerat. Alias dolorum ipsa reiciendis quibusdam animi sunt ut, rerum, eveniet dolor iste error.
+    <footer>
+        <h3>Contact Information</h3>
+        <ul id="contacts">
+            <li>Email: svc@gmail.com</li>
+            <li>Tel: 031-16 70 28</li>
+            <li>Tel: 070-420 69 02</li>
+        </ul>
+        <ul id="address">
+            <li>St: Sesame Street 12</li>
+            <li>zip: 418 58 City</li>
+        </ul>
+    </footer>
+
+    <h1 id="news_header">News & Statistics</h1>
+    <article id="breaking_news_wrapper" class="headline">
+        <img src="img/news1.avif" alt="nyhet" id="breaking_news_img">
+        <p>
+            <span style="color: rgb(255, 115, 0);">Right Now:</span>
+            "Corporis doloribus, officiis provident odit?" - Names Bond
         </p>
-        <p id="headline2" class="headline">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tempore eaque magnam esse dicta iure? Ipsam, quaerat. Alias dolorum ipsa reiciendis quibusdam animi sunt ut, rerum, eveniet dolor iste error.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tempore eaque magnam esse dicta iure? Ipsam, quaerat. Alias dolorum ipsa reiciendis quibusdam animi sunt ut, rerum, eveniet dolor iste error.
-        </p>
-        <p id="headline3" class="headline">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tempore eaque magnam esse dicta iure? Ipsam, quaerat. Alias dolorum ipsa reiciendis quibusdam animi sunt ut, rerum, eveniet dolor iste error.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae tempore eaque magnam esse dicta iure? Ipsam, quaerat. Alias dolorum ipsa reiciendis quibusdam animi sunt ut, rerum, eveniet dolor iste error.
-        </p>
+    </article>
+    <div id="top_headline_wrapper">
+        <h2 id="top_headline_text">Top Headlines</h2>
+        <article id="headline1" class="headline">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae te
+            </p>
+            <img src="img/news4.avif" alt="nyhet" class="news_img">
+        </article>
+        <article id="headline2" class="headline">
+            <img src="img/news2.avif" alt="nyhet" class="news_img">
+            <p>
+                Yksi dos kaksi tres kolme, amet consectetur adipisicing elit. Foleusnign te
+            </p>
+        </article>
+        <article id="headline3" class="headline">
+            <p>
+                Ipsum lorem dolor sit, amet consectetur adipisicing elit. Recusandae tempore eaque
+            </p>
+            <img src="img/news3.avif" alt="nyhet" class="news_img">
+        </article>
+    </div>
+
+    <div id="headline_wrapper">
+        <article>
+            
+        </article>
     </div>
 </body>
 </html>

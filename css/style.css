@@ -9,10 +9,10 @@ body {
 }
 
 h1 {
-    color: rgb(54, 54, 54);
+    color: #1c1b22;
     display: flex;
     position: absolute;
-    top: 15px;
+    align-items: center;
     left: 15px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 3rem;
@@ -20,22 +20,24 @@ h1 {
 
 nav {
     display: flex;
+    z-index: 2;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgb(245, 110, 0);
+    background-color: rgb(255, 115, 0);
     height: 91px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2rem;
 }
 
 #nav-links {
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 70vh;
     position: absolute;
-    background-color: rgb(245, 110, 0);
+    background-color: rgb(255, 115, 0);
     right: 0px;
     top: -91vh;
     width: 310px;
@@ -49,7 +51,7 @@ nav {
 
 #nav-links a {
     text-decoration: none;
-    color: rgb(54, 54, 54);
+    color: #1c1b22;
     letter-spacing: 0.2rem;
     font-size: 1.5rem;
     display: flex;
@@ -71,7 +73,7 @@ nav {
 .burger_line {
     width: 30px;
     height: 4px;
-    background-color: rgb(54, 54, 54);
+    background-color: #1c1b22;
     margin: 5px;
     border-radius: 10%;
     transition: all 0.5s;
@@ -86,39 +88,84 @@ nav {
 }
 
 #burger {
-    margin-right: 50px;
+    margin-right: 40px;
     cursor: pointer;
 }
 
 #search {
-    width: 100px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 2rem;
-    background-color: rgb(54, 54, 54);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: width 0.4s ease-in-out;
+    display: none;
+}
+
+#search_icon {
+    display: flex;
+    margin-top: 490px;
+    width: auto;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 15px;
 }
 
 #search:focus {
     width: 100%;
 }
 
-.home_image {
-    height: 300px;
-    width: 437px;
-    filter: blur(0px);
+footer {
+    display: grid;
+    list-style: none;
     position: absolute;
+    border: 2px solid #42414d;
+    background-color: rgb(255, 115, 0);
+    width: 100%;
+    height: 130px;
+    bottom: -600px;
+    color:  #1c1b22;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr;
+    grid-template-areas: 
+        "h3 h3"
+        "co ad"
+    ;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: h3;
+}
+
+#contacts {
+    grid-area: co;
+}
+
+#address {
+    grid-area: ad;
+}
+
+.home_image {
+    height: auto;
+    width: 100%;
+    filter: blur(0px);
+}
+
+#calculate {
+    grid-area: ca;
 }
 
 #evaluate {
-    position: absolute;
-    top: 350px;
+    grid-area: ev;
 }
 
 #revolutionize {
-    height: 550px;
+    grid-area: re;
+}
+
+#home_image_text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: white;
 }
 
 form {
@@ -127,7 +174,7 @@ form {
     justify-content: space-evenly;
     height: 100vh;
     width: auto;
-    color: white;
+    color: rgb(194, 194, 194);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -136,7 +183,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 500px;
+    height: 950px;
     align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
@@ -155,7 +202,7 @@ li {
     border-radius: 5px;
     width: 80vw;
     height: 4vh;
-    color: white;
+    color: rgb(194, 194, 194);
     background-color: #2b2a33;
     font-size: 1.2rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -169,7 +216,7 @@ li {
 .button {
     border: 2px solid #218fa6;
     background-color: #2b2a33;
-    color: white;
+    color: rgb(194, 194, 194);
     text-align: center;
     display: inline-block;
     border-radius: 5px;
@@ -181,17 +228,23 @@ li {
 }
 
 .button:hover {
-    background-color: #3CBC8D;
+    background-color: #218fa6;
+    color: rgb(255, 255, 255);
+}
+
+#explanation {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
 }
 
-#news_wrapper {
+#top_headline_wrapper {
     display: grid;
     position: relative;
+    margin-top: 20px;
     grid-template-columns: 20px 1fr 20px;
-    grid-template-rows: 30px 1fr 30px 1fr 23px 1fr;
+    grid-template-rows: 80px 1fr 30px 1fr 23px 1fr;
     grid-template-areas: 
-    ".  .  . "
+    ".  th . "
     "h1 h1 . "
     ".  .  . "
     ".  h2 h2"
@@ -200,32 +253,144 @@ li {
     ;
 }
 
+#news_header {
+    margin-top: 10px;
+    color: rgb(194, 194, 194);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+#top_headline_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: th;
+    color: rgb(194, 194, 194);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+}
+
 #headline1 {
     grid-area: h1;
+    border-right: 2px solid #218fa6;
 }
 
 #headline2 {
     grid-area: h2;
+    border-left: 2px solid #218fa6;
 }
 
 #headline3 {
     grid-area: h3;
+    border-right: 2px solid #218fa6;
 }
 
 .headline {
-    background-color: rgba(54, 54, 54, 0.678);
+    background-color: #2b2a33;
     display: flex;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 10px;
     color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    border-top: 2px solid #218fa6;
+    border-bottom: 2px solid #218fa6;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* kantigt?/smalt/runda element - mer modernt */
+.news_img {
+    height: 120px;
+    width: 200px;
+}
 
-#computer {
-    position: absolute;
-    z-index: 0;
-    width: auto;
+#breaking_news_img {
+    width: 100%;
+    height: 200px;
+}
+
+#breaking_news_wrapper {
+    margin-top: 80px;
     display: flex;
-    height: 20vh;
+    flex-direction: column;
+    padding: 0px;
+    border: 2px solid #42414d;
+    font-size: 2.2rem;
 }
+
+#story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#map {
+    height: auto;
+    width: 100%;
+    padding: 5px;
+}
+
+@media screen and (min-width: 800px) {
+    #burger {
+        display: none;
+    }
+    
+    nav {
+        height: 70px;
+    }
+    
+    #search_icon {
+        display: none;
+    }
+
+    #search {
+        width: 100px;
+        display: flex;
+        height: 50px;
+        margin-top: 483px;
+        margin-right: 40px;
+        box-sizing: border-box;
+        border: 2px solid #2b2a33;
+        border-radius: 10px;
+        font-size: 1.7rem;
+        background-color: #2b2a33;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        transition: width 0.4s ease-in-out;
+        color: rgb(194, 194, 194);
+        background-image: url(search_icon.png);
+        background-repeat: no-repeat;
+        background-size: 50px;
+        padding-left: 50px;
+    }
+
+    #nav-links {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        list-style: none;   
+    }
+
+    #home_wrapper {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "ca ca"
+            "ev re"
+        ;
+        gap: 10px;
+    }
+
+    .home_image {
+        width: 500px;
+    }
+}
+
+/* contactinfo längst ned på varje sida */
