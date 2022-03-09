@@ -17,8 +17,8 @@
             <li><a href="about_us.html">About Us</a></li>
         </ul>
         <form>
-            <input type="text" id="search" placeholder="Search..">
-            <img src="img/search_icon.png" id="search_icon">
+            <input type="text" id="search">
+            <img src="css/search_icon1.png" id="search_icon">
         </form>
         <div id="burger">
             <div id="line_1", class="burger_line"></div>
@@ -27,7 +27,7 @@
     </nav>
 
     <footer>
-        <h3>Contact Information</h3>
+        <h3 id="footer_title">Contact Information</h3>
         <ul id="contacts">
             <li>Email: svc@gmail.com</li>
             <li>Tel: 031-16 70 28</li>
@@ -44,24 +44,73 @@
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,  
             maiores itaque distinctio quod! Soluta cum est doloribus rerum,  
-            neque, similique cumque providen dicta iste, tempora ipsam!
-        </p>
+            neque, similique cumque LEO dicta iste, seuiheses ipsam!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,  
+            neque, smiden dicta ipsam!
+        </p>        
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,  
-            maiores itaque distinctio quod! Soluta cum est doloribus rerum,  
+            maiores itaque distinctio quod! Soluta cum est LISINSKI rerum,  
+            neque, similique cumque providen dicta iste, tempora ipsam!
         </p>
-        <!-- timeline -->
     </section>
     <section id="map_wrapper">
         <h2>Where Are We Located?</h2>
-        <img src="img/map.png" alt="map" id="map">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2132.526953977714!2d11.972586551937113!3d57.6905166810231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff30cb0e6c031%3A0x512e1a3cb4192a9!2sNTI%20Gymnasiet%20Johanneberg!5e0!3m2!1ssv!2sse!4v1646672789034!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
-    <section id="pictures">
 
+    <br>
+
+    <h2 id="opening_hours_title">Opening Hours</h2>
+    <section id="opening_hours_wrapper">
+        <div id="opening_hours">
+            <ul id="days">
+                <li id="day">Monday:</li>
+                <li id="day">Tuesday:</li>
+                <li id="day">Wednesday:</li>
+                <li id="day">Thursday:</li>
+                <li id="day">Friday:</li>
+                <li id="day">Saturday:</li>
+                <li id="day">Sunday:</li>
+            </ul>
+            <ul>
+                <li id="time">12:00-19:00</li>
+                <li id="time">11:00-19:00</li>
+                <li id="time">11:00-19:00</li>
+                <li id="time">12:00-18:00</li>
+                <li id="time">12:00-18:00</li>
+                <li id="time"><span style="color: rgb(255, 115, 0);">Closed</span></li>
+                <li id="time"><span style="color: rgb(255, 115, 0);">Closed</span></li>
+            </ul>
+        </div>
     </section>
+
+    <br>
+    <br>
+
+    <div class="slideshow">
+        <div class="mySlides fade">
+            <img src="img/img1.avif" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="img/img2.avif" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="img/img3.avif" style="width:100%">
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
     <section id="q&a"> 
-<!-- öppettider -->
+        <!-- timeline -->
     </section>
+
     <script src="js/script.js"></script>
 </body>
 </html>
+
+

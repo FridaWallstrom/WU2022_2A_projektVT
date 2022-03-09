@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    color: #1c1b22;
+    color: rgb(255, 115, 0);
     display: flex;
     position: absolute;
     align-items: center;
@@ -23,7 +23,8 @@ nav {
     z-index: 2;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgb(255, 115, 0);
+    background-color: #2b2a33;
+    border-bottom: 3px solid rgb(255, 115, 0);
     height: 91px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2rem;
@@ -35,9 +36,9 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 70vh;
+    height: 65vh;
     position: absolute;
-    background-color: rgb(255, 115, 0);
+    background-color: rgba(255, 115, 0, 0.980);
     right: 0px;
     top: -91vh;
     width: 310px;
@@ -66,16 +67,16 @@ nav {
 }
 
 #nav-links a:hover {
-    background-color: rgba(54, 54, 54, 0.274);
+    background-color: #2b2a331e;
     transition: ease 1s;
 }
 
 .burger_line {
     width: 30px;
     height: 4px;
-    background-color: #1c1b22;
+    background-color: rgb(255, 115, 0);
     margin: 5px;
-    border-radius: 10%;
+    border-radius: 15%;
     transition: all 0.5s;
 }
 
@@ -113,12 +114,12 @@ footer {
     display: grid;
     list-style: none;
     position: absolute;
-    border: 2px solid #42414d;
-    background-color: rgb(255, 115, 0);
+    border-top: 3px solid rgb(255, 115, 0);
+    background-color:  #2b2a33;
     width: 100%;
     height: 130px;
-    bottom: -600px;
-    color:  #1c1b22;
+    bottom: -800px;
+    color:  white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.2rem;
     grid-template-columns: 1fr 1fr;
@@ -127,6 +128,10 @@ footer {
         "h3 h3"
         "co ad"
     ;
+}
+
+#footer_title {
+    color: #17a4c0;
 }
 
 h3 {
@@ -144,28 +149,94 @@ h3 {
     grid-area: ad;
 }
 
+#home_header {
+    position: relative;
+    text-align: center;
+    width: 100vw;
+}
+
+#home_header_img {
+    filter: brightness(50%);
+    width: 100vw;
+    height: 400px;
+}
+
+#home_header_title {
+    color: white;
+    font-size: 2.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+#home_header_text {
+    color: rgb(194, 194, 194);
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 55%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
 .home_image {
     height: auto;
     width: 100%;
-    filter: blur(0px);
+    filter: blur(2px);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 #calculate {
+    display: flex;
     grid-area: ca;
+    flex-direction: column;
 }
 
 #evaluate {
+    display: flex;
     grid-area: ev;
+    flex-direction: column;
 }
 
 #revolutionize {
+    display: flex;
     grid-area: re;
+    flex-direction: column;
 }
 
-#home_image_text {
+.home_image_text {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2rem;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #218fa6;
+    font-size: 3rem;
+    background-color: #2b2a33;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 8px solid #42414d;
+}
+
+#icon_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 form {
@@ -194,7 +265,10 @@ li {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
 
+#calculator_title {
+    color: lightgray;
 }
 
 .calculator_input {
@@ -234,7 +308,17 @@ li {
 
 #explanation {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
+    color:  #218fa6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#explanation_title {
+    color: rgb(194, 194, 194);
 }
 
 #top_headline_wrapper {
@@ -291,6 +375,7 @@ li {
     background-color: #2b2a33;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: 10px;
     color: rgb(255, 255, 255);
     font-size: 1.7rem;
@@ -319,6 +404,7 @@ li {
 }
 
 #story {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -327,10 +413,102 @@ li {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#map_wrapper {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #map {
-    height: auto;
+    height: 400px;
     width: 100%;
+    padding: 10px;
+}
+
+#opening_hours_title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#opening_hours_wrapper {
+    display: flex;
+    justify-content: center;
+    height: 220px;
+}
+
+#opening_hours {
+    color: white;
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #2b2a33;
+    width: 350px;
+    border: 2px solid #218fa6;
+}
+
+#days {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
     padding: 5px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -35px;
+    padding: 16px;
+    color: black;
+    font-size: 25px;
+    transition: 0.6s ease;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+}  
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 @media screen and (min-width: 800px) {
@@ -347,11 +525,11 @@ li {
     }
 
     #search {
-        width: 100px;
+        width: 80px;
         display: flex;
         height: 50px;
-        margin-top: 483px;
-        margin-right: 40px;
+        margin-top: 480px;
+        margin-right: 0px;
         box-sizing: border-box;
         border: 2px solid #2b2a33;
         border-radius: 10px;
@@ -360,10 +538,10 @@ li {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         transition: width 0.4s ease-in-out;
         color: rgb(194, 194, 194);
-        background-image: url(search_icon.png);
+        background-image: url(search_icon1.png);
         background-repeat: no-repeat;
-        background-size: 50px;
-        padding-left: 50px;
+        background-size: 45px;
+        cursor: pointer;
     }
 
     #nav-links {
@@ -380,7 +558,7 @@ li {
     #home_wrapper {
         display: grid;
         grid-template-columns: 100px 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 100px 1fr;
         grid-template-areas: 
             "ca ca"
             "ev re"
@@ -393,4 +571,3 @@ li {
     }
 }
 
-/* contactinfo längst ned på varje sida */
