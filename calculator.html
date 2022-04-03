@@ -9,7 +9,7 @@
 </head>
 <body id="calc_body">
     <nav>
-        <h1>SVC</h1>
+        <img src="img/logo.png" alt="logga" id="logo">
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="calculator.html">Calculator</a></li>
@@ -44,7 +44,7 @@
                 <h2 id="calculator_title">Calculator</h2>
                 <li>
                     <label for="Stock">Stock</label>
-                    <select name="value" class="calculator_input">
+                    <select id="Stock" name="value" class="calculator_input">
                         <option value="-">-</option>
                         <option value="Academedia">Academedia</option>
                         <option value="Swedbank">Swedbank</option>
@@ -55,43 +55,35 @@
                 </li>
                 <li>
                     <label for="cash_flow">Cash Flow</label>
-                    <input type="text" class="calculator_input" name="cash_flow" required="required">
+                    <input id="cash_flow" type="text" class="calculator_input" name="cash_flow" required="required">
                 </li>
                 <li>
                     <label for="additional_years">Additional years</label>
-                    <input type="number" name="additional_years" class="calculator_input" required="required">
+                    <input id="additional_years" type="number" name="additional_years" class="calculator_input">
                 </li>
                 <li>
                     <label for="discount_rate">Discount Rate</label>
-                    <input type="number" name="discount_rate" class="calculator_input" required="required">
+                    <input id="discount_rate" type="number" name="discount_rate" class="calculator_input">
                 </li>
                 <li>
                     <label for="dividends_per_share_next_year">Dividends per Share Next Year</label>
-                    <input type="number" name="dividends_per_share_next_year" class="calculator_input" required="required">
-                </li>
-                <li>
-                    <label for="current_market_value">Current Market Value</label>
-                    <input type="number" name="current_market_value" class="calculator_input" required="required">
+                    <input id="dividends_per_share_next_year" type="number" name="dividends_per_share_next_year" class="calculator_input">
                 </li>
                 <li>
                     <label for="growth_rate_dividends">Growth Rate Dividends</label>
-                    <input type="number" name="growth_rate_dividends" class="calculator_input" required="required">
+                    <input id="growth_rate_dividends" type="number" name="growth_rate_dividends" class="calculator_input">
                 </li>
                 <li>
                     <label for="market_value_equity">Market Value of Equity</label>
-                    <input type="number" name="market_value_equity" class="calculator_input" required="required">
+                    <input id="market_value_equity" type="number" name="market_value_equity" class="calculator_input">
                 </li>
                 <li>
                     <label for="market_value_debt">Market Value of Debt</label>
-                    <input type="number" name="market_value_debt" class="calculator_input" required="required">
+                    <input id="market_value_debt" type="number" name="market_value_debt" class="calculator_input">
                 </li>
                 <li>
                     <label for="cost_debt">Cost of Debt</label>
-                    <input type="number" name="cost_debt" class="calculator_input" required="required">
-                </li>
-                <li>
-                    <label for="corporate_tax_rate">Corporate Tax Rate</label>
-                    <input type="number" name="corporate_tax_rate" class="calculator_input" required="required">
+                    <input id="cost_debt" type="number" name="cost_debt" class="calculator_input">
                 </li>
                 <button type="submit" class="button">Submit</button>
             </ul>

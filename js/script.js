@@ -6,7 +6,7 @@ function toggleMenu() {
     burger.classList.toggle("crossed_line")
 }
 
-burger.addEventListener("click", toggleMenu)
+burger.addEventListener("click", toggleMenu) 
 
 var slideIndex = 1;
 showSlides(slideIndex);
