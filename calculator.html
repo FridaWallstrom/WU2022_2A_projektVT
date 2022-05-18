@@ -18,7 +18,6 @@
         </ul>
         <form>
             <input type="text" id="search">
-            <img src="css/search_icon1.png" id="search_icon" alt="sök ikon">
         </form>
         <div id="burger">
             <div id="line_1" class="burger_line"></div>
@@ -29,98 +28,105 @@
     <footer>
         <h3 id="footer_title">Contact Information</h3>
         <ul id="contacts">
-            <li>Email: svc@gmail.com</li>
-            <li>Tel: 031-16 70 28</li>
-            <li>Tel: 070-420 69 02</li>
+            <li>svc@gmail.com</li>
+            <li>031-16 70 28</li>
+            <li>070-420 69 02</li>
         </ul>
         <ul id="address">
-            <li>St: Sesame Street 12</li>
-            <li>zip: 418 58 City</li>
+            <li>Sesame Street 12</li>
+            <li>418 58 City</li>
         </ul>
     </footer>
-
-    <form method="post">
-            <ul id="calculator_forms">
-                <h2 id="calculator_title">Calculator</h2>
-                <li>
-                    <label for="Stock">Stock</label>
-                    <select id="Stock" name="value" class="calculator_input">
-                        <option value="-">-</option>
-                        <option value="Academedia">Academedia</option>
-                        <option value="Swedbank">Swedbank</option>
-                        <option value="Handelsbanken">Handelsbanken</option>
-                        <option value="SBB">Samhällsbyggnadsbolaget</option>
-                        <option value="Tethy">Tethys oil</option>
-                    </select>
-                </li>
-                <li>
-                    <label for="cash_flow">Cash Flow</label>
-                    <input id="cash_flow" type="text" class="calculator_input" name="cash_flow" required="required">
-                </li>
-                <li>
-                    <label for="additional_years">Additional years</label>
-                    <input id="additional_years" type="number" name="additional_years" class="calculator_input">
-                </li>
-                <li>
-                    <label for="discount_rate">Discount Rate</label>
-                    <input id="discount_rate" type="number" name="discount_rate" class="calculator_input">
-                </li>
-                <li>
-                    <label for="dividends_per_share_next_year">Dividends per Share Next Year</label>
-                    <input id="dividends_per_share_next_year" type="number" name="dividends_per_share_next_year" class="calculator_input">
-                </li>
-                <li>
-                    <label for="growth_rate_dividends">Growth Rate Dividends</label>
-                    <input id="growth_rate_dividends" type="number" name="growth_rate_dividends" class="calculator_input">
-                </li>
-                <li>
-                    <label for="market_value_equity">Market Value of Equity</label>
-                    <input id="market_value_equity" type="number" name="market_value_equity" class="calculator_input">
-                </li>
-                <li>
-                    <label for="market_value_debt">Market Value of Debt</label>
-                    <input id="market_value_debt" type="number" name="market_value_debt" class="calculator_input">
-                </li>
-                <li>
-                    <label for="cost_debt">Cost of Debt</label>
-                    <input id="cost_debt" type="number" name="cost_debt" class="calculator_input">
-                </li>
-                <button type="submit" class="button">Submit</button>
-            </ul>
-    </form>
-    <section class="explanation">
-        <h2 class="explanation_title">How does SVC work?</h2>
-        <p class="exp_text">
-            Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Animi cum, saepe soluta 
-            reiciendis sequi nisi recusandae ipsam fug
-            iat vitae distinctio architecto enim error 
-            sapiente facilis fuga! Harum, laborum amet?
-            Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Animi cum, saepe soluta 
-            reiciendis sequi nisi recusandae ipsam fug
-            iat vitae distinctio architecto enim error 
-            sapiente facilis fuga! Harum, laborum amet?
-        </p>
-        <p class="exp_text">
-            Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Animi cum, saepe soluta 
-            reiciendis sequi nisi recusandae ipsam fug
-            iat vitae distinctio architecto enim error 
-            sapiente facilis fuga! Harum, laborum amet?
-            reiciendis sequi nisi recusandae ipsam fug
-            iat vitae distinctio architecto enim error 
-            sapiente facilis fuga! Harum, laborum amet?
-            Animi cum, saepe soluta 
-            reiciendis sequi nisi recusandae ipsam fug
-            iat vitae distinctio architecto enim error 
-            sapiente facilis fuga! Harum, laborum amet?
-            reiciendis sequi nisi recusandae ipsam fug
-            iat vitae distinctio architecto enim error 
-            sapiente sapiente facilis fuga! Harum, 
-        </p>
-    </section>
-
+    <div id="calculator_wrapper">
+        <form method="post">
+                <ul id="calculator_forms">
+                    <h1 id="calculator_title">Calculator</h1>
+                    <li>
+                        <label for="Stock">Stock</label>
+                        <select id="Stock" name="value" class="calculator_input">
+                            <option value="-">-</option>
+                            <option value="Academedia">Academedia</option>
+                            <option value="Swedbank">Swedbank</option>
+                            <option value="Handelsbanken">Handelsbanken</option>
+                            <option value="SBB">Samhällsbyggnadsbolaget</option>
+                            <option value="Tethy">Tethys oil</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="cash_flow">Cash Flow</label>
+                        <input id="cash_flow" type="text" class="calculator_input" name="cash_flow" required="required">
+                    </li>
+                    <li>
+                        <label for="additional_years">Additional years</label>
+                        <input id="additional_years" type="number" name="additional_years" class="calculator_input">
+                    </li>
+                    <li>
+                        <label for="discount_rate">Discount Rate</label>
+                        <input id="discount_rate" type="number" name="discount_rate" class="calculator_input">
+                    </li>
+                    <li>
+                        <label for="dividends_per_share_next_year">Dividends per Share Next Year</label>
+                        <input id="dividends_per_share_next_year" type="number" name="dividends_per_share_next_year" class="calculator_input">
+                    </li>
+                    <li>
+                        <label for="growth_rate_dividends">Growth Rate Dividends</label>
+                        <input id="growth_rate_dividends" type="number" name="growth_rate_dividends" class="calculator_input">
+                    </li>
+                    <li>
+                        <label for="market_value_equity">Market Value of Equity</label>
+                        <input id="market_value_equity" type="number" name="market_value_equity" class="calculator_input">
+                    </li>
+                    <li>
+                        <label for="market_value_debt">Market Value of Debt</label>
+                        <input id="market_value_debt" type="number" name="market_value_debt" class="calculator_input">
+                    </li>
+                    <li>
+                        <label for="cost_debt">Cost of Debt</label>
+                        <input id="cost_debt" type="number" name="cost_debt" class="calculator_input">
+                    </li>
+                    <button type="submit" class="button">Submit</button>
+                </ul>
+        </form>
+        <section class="explanation" id="calc_exp1">
+            <h2 class="explanation_title">How does SVC work?</h2>
+            <p class="exp_text">
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Animi cum, saepe soluta 
+                reiciendis sequi nisi recusandae ipsam fug
+                iat vitae distinctio architecto enim error 
+                sapiente facilis fuga! Harum, laborum amet?
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Animi cum, saepe soluta 
+                reiciendis sequi nisi recusandae ipsam fug
+                iat vitae distinctio architecto enim error 
+                sapiente facilis fuga! Harum, laborum amet?
+            </p>
+        </section>
+        <section class="explanation" id="calc_exp2">
+            <h2 class="explanation_title">ATTENTION</h2>
+            <p class="exp_text" id="exp_at">
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Animi cum, saepe soluta 
+                reiciendis sequi nisi recusandae ipsam fug
+                iat vitae distinctio architecto enim error 
+                sapiente facilis fuga! Harum, laborum amet?
+                reiciendis sequi nisi recusandae ipsam fug
+                iat vitae distinctio architecto enim error 
+                sapiente facilis fuga! Harum, laborum amet?
+                Animi cum, saepe soluta 
+                reiciendis sequi nisi recusandae ipsam fug
+                iat vitae distinctio architecto enim error 
+                sapiente facilis fuga! Harum, laborum amet?
+                reiciendis sequi nisi recusandae ipsam fug
+                iat vitae distinctio architecto enim error 
+                sapiente sapiente facilis fuga! Harum, 
+            </p>
+        </section>
+        <section id="result">
+            <h2>The stock's estimated value is: <span style="color: rgb(255, 115, 0);">Xkr/aktie</span></h2>
+            <h3>This means that the stock is currently overpriced</h3>
+        </section>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>

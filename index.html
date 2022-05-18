@@ -18,7 +18,6 @@
         </ul>
         <form>
             <input type="text" id="search">
-            <img src="css/search_icon1.png" id="search_icon" alt="sök ikon">
         </form>
         <div id="burger">
             <div id="line_1" class="burger_line"></div>
@@ -30,52 +29,72 @@
     <footer>
         <h3 id="footer_title">Contact Information</h3>
         <ul id="contacts">
-            <li>Email: svc@gmail.com</li>
-            <li>Tel: 031-16 70 28</li>
-            <li>Tel: 070-420 69 02</li>
+            <li>svc@gmail.com</li>
+            <li>031-16 70 28</li>
+            <li>070-420 69 02</li>
         </ul>
         <ul id="address">
-            <li>St: Sesame Street 12</li>
-            <li>zip: 418 58 City</li>
+            <li>Sesame Street 12</li>
+            <li>418 58 City</li>
         </ul>
     </footer>
 
-    <div id="home_wrapper">
-        <div id="home_header">
+    <div id="home_wrapper"> 
+        <section id="home_header">
             <img src="img/home_header.jpg" alt="bakgrundsbild" id="home_header_img">
-            <h2 id="home_header_title">Stock Value Calculator</h2>
-            <h3 id="home_header_text">The most efficient stock price evaluator on the market</h3>
+            <h1 id="home_header_title">Stock Value Calculator</h1>
+            <h2 id="home_header_text">The most efficient stock price evaluator on the market</h2>
             <button type="submit" id="home_button" class="button">Subscription</button>
-        </div>
+        </section>
 
-        <br>
-
-        <div id="calculate">
-            <h3 class="home_image_text">Calculate</h3>
+        <section id="calculate" class="home_info">   
+            <h2 class="home_image_text">Calculate</h2>
             <div class="home_image_border">
                 <img src="img/computer.jpg" alt="bild på dator" class="home_image">
+                <p class="home_text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae te
+                </p>
             </div>
-        </div>
+        </section>
 
         <br>
 
-        <div id="evaluate">
-            <h3 class="home_image_text">Evaluate</h3>
+        <section id="evaluate" class="home_info">
+            <h2 class="home_image_text">Evaluate</h2>
             <div class="home_image_border">
-                <img src="img/office.jpg" alt="bild på kontor" class="home_image">
+                <img src="img/office.jpg" alt="bild på kontor" class="home_image" id="ev_img">
+                <p class="home_text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae te
+                </p>
             </div>
-        </div>
+        </section>
 
         <br>
 
-        <div id="revolutionize">
-            <h3 class="home_image_text">Revolutionize</h3>
+        <section id="revolutionize">
+            <h2 class="home_image_text">Revolutionize</h2>
             <div class="home_image_border">
                 <img src="img/stock.jpg" alt="bild på aktie" class="home_image">
+                <p class="home_text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae te
+                </p>
             </div>
-        </div>
+        </section>
 
-        <br>
+        <section id="meet_us_wrapper">
+            <h2>Meet Us</h2>
+            <div id="meet_us">
+                <div class="person">
+                    <img src="img/girl.jpg" alt="tjej" class="meet_pic">
+                </div>
+                <div class="person">
+                    <img src="img/girl2.jpg" alt="tjej" class="meet_pic">
+                </div>
+                <div class="person">
+                    <img src="img/boy.jpg" alt="kille" class="meet_pic">
+                </div>
+            </div>
+        </section>
 
         <div id="icon_wrapper">
             <div>
@@ -100,7 +119,7 @@
 
         <section id="home_explanation">
             <h2 id="home_explanation_title">Our Purpose</h2>
-            <div id="home_explanation_text">
+            <section id="home_explanation_text">
                 <p>
                     Lorem ipsum dolor sit amet consectetur 
                     adipisicing elit. Animi cum, saepe soluta 
@@ -122,7 +141,7 @@
                     iat vitae distinctio architecto enim error 
                     sapiente facilis fuga! Harum, laborum amet?
                 </p>
-            </div>
+            </section>
         </section>
      </div>
 </body>
