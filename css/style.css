@@ -228,6 +228,10 @@ h3 {
     flex-direction: column;
 }
 
+.home_text {
+    display: none;
+}
+
 .home_image_text {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.8rem;
@@ -283,6 +287,10 @@ h3 {
 
 #home_explanation_title {
     color: rgb(194, 194, 194);
+}
+
+#meet_us_wrapper {
+    display: none;
 }
 
 form {
@@ -370,8 +378,8 @@ li {
 }
 
 #result {
-    width: 31vw;
-    height: 15vh;
+    width: 100%;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -474,6 +482,10 @@ li {
     align-items: center;
     justify-content: center;
     grid-area: bn;
+}
+
+#small_news_wrapper {
+    display: none;
 }
 
 #story {
@@ -692,17 +704,17 @@ li {
 
     #home_wrapper {
         display: grid;
-        grid-template-columns: 200px 1fr 60px 1fr 200px;
-        grid-template-rows: 100px 500px 500px 500px 500px 1000px 100px 500px;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 100px 500px 500px 500px 950px 550px 100px 500px;
         grid-template-areas: 
-            ".  .  .  .  . "
-            "hh hh hh hh hh"
-            ".  ca ca ca . "
-            ".  ev ev ev . "
-            ".  re re re . "
-            ".  mu mu mu . "
-            ".  iw iw iw . "
-            ".  hx hx hx . "
+            ".  .  . "
+            "hh hh hh"
+            ".  ca . "
+            ".  ev . "
+            ".  re . "
+            ".  mu . "
+            ".  iw . "
+            ".  hx . "
         ;
     }
 
@@ -723,6 +735,7 @@ li {
     }
 
     .home_text {
+        display: flex;
         color: white;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
@@ -784,7 +797,9 @@ li {
         grid-area: mu;
         background-color: #2b2a33;
         height: 550px;
-        z-index: 5;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.5rem;
     }
 
     #meet_us {
@@ -820,8 +835,8 @@ li {
     #top_headline_wrapper {
         max-width: 1000px;
         display: grid;
-        grid-template-columns: 100px 1fr 1fr 100px;
-        grid-template-rows: 80px 1fr 50px 200px 10px 200px 10px 200px 100px;
+        grid-template-columns: 100px 1fr 1fr 150px;
+        grid-template-rows: 80px 1fr 50px 200px 10px 200px 10px 200px 60px;
         grid-template-areas: 
         ".  bn bn . "
         "nh nh nh nh"
@@ -889,13 +904,18 @@ li {
     }
 
     #news_wrapper_border {
-        background-color: green;
         border: 2px solid #42414d;
-        width: 1000px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 100px;
+    }
+
+    #nw_border {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
     }
 
     #calculator_title {
@@ -929,12 +949,15 @@ li {
 
     #result {
         grid-area: rt;
+        width: 31vw;
+        margin-right: 150px;
+        height: 15vh;
     }
 
     #calculator_wrapper {
         display: grid;
         position: relative;
-        grid-template-columns: 800px 1fr 500px 100px;
+        grid-template-columns: 1100px 1fr 500px 700px;
         grid-template-rows: 100px 1fr 1fr 0.5fr;
         grid-template-areas: 
         ".  cf .  . "
