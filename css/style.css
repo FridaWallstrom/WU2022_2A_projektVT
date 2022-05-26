@@ -205,7 +205,7 @@ h3 {
 }
 
 .home_image_border {
-    border: 2px solid black;
+    border: 3px solid #2b2a33;
     display: flex;
     flex-direction: row;
 }
@@ -359,12 +359,14 @@ li {
 }
 
 #exp_at {
-    color:  rgb(255, 166, 0);
+    color: rgb(255, 115, 0);
+    width: 25vw;
+    font-size: 1rem;
 }
 
 .explanation {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:  #00d5ff;
+    color: #00d5ff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -389,6 +391,7 @@ li {
     background-color: #2b2a33;
     color: white;
     font-size: 1.25rem;
+    border: 2px solid rgb(255, 115, 0);
 }
 
 #news_header {
@@ -440,6 +443,15 @@ li {
     border-right: 2px solid #218fa6;
 }
 
+.head_txt {
+    display: none;
+    color: rgb(194, 194, 194);
+}
+
+.head_title {
+    font-size: 1.5rem;
+}
+
 .headline {
     padding: 5px;
     background-color: #2b2a33;
@@ -456,6 +468,7 @@ li {
 .news_img {
     height: 100px;
     width: 200px;
+    border-radius: 10px;
 }
 
 #breaking_news_img {
@@ -718,8 +731,22 @@ li {
         ;
     }
 
+    #ev_txt {
+        grid-area: et;
+    }
+
     #ev_img {
-        margin-left: 900px;
+        grid-area: ei;
+        margin-right: 0px;
+    }
+
+    #evaluate_wrapp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "et ei"
+        ;
     }
 
     #home_explanation {
@@ -784,7 +811,6 @@ li {
 
     .home_image_border {
         width: 1500px;
-        background-color: #1c1b22;
         padding: 20px;
     }
 
@@ -795,11 +821,11 @@ li {
         align-items: center;
         width: 1100px;
         grid-area: mu;
-        background-color: #2b2a33;
         height: 550px;
         color: white;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 1.5rem;
+        border: 3px solid #2b2a33;
     }
 
     #meet_us {
@@ -850,13 +876,40 @@ li {
         ;
     }
 
+    .head_txt {
+        display: flex;
+        font-size: 1.5rem;
+        padding: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .head_title {
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+
     .news_i {
         height: 500px;
         width: 240px;
+        border-radius: 5px;
+    }
+
+    .news_text {
+        color: rgb(212, 212, 212);
+    }
+
+    .news_title {
+        text-decoration: underline;
     }
 
     #breaking_news_text {
         margin-left: 20px;
+    }
+
+    #bnt {
+        font-size: 2rem;
+        color: rgb(194, 194, 194);
     }
 
     #news_header {
@@ -896,7 +949,7 @@ li {
         color: white;
         background-color: #2b2a33;
         padding: 10px;
-        width: 280px;
+        width: 270px;
         height: 290px;
         border: 2px solid #218fa6;
         font-size: 1rem;
@@ -928,6 +981,11 @@ li {
         width: 40vw;
         height: 6vh;
     }
+
+    .calculation_img {
+        width: 30vw;
+        border: 3px solid #218fa6;
+    }
     
     .calculator_input:hover {
         border: 4px solid #218fa6;
@@ -939,31 +997,40 @@ li {
         grid-area: cf;
     }
 
-    #calc_exp1 {
-        grid-area: c1;
-    }
-    
-    #calc_exp2 {
-        grid-area: c2;
+    #result {
+        width: 30vw;
+        height: 15vh;
     }
 
-    #result {
-        grid-area: rt;
-        width: 31vw;
-        margin-right: 150px;
-        height: 15vh;
+    #calc_wrapper {
+        border: 2px solid rgb(255, 115, 0);
+        padding: 5px;
+        background-color: #2b2a33;
+        font-size: 1rem;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #info {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 100px;
+        background-color: #2b2a33;
+        width: 26vw;
+        height: 1300px;
+        grid-area: if;
     }
 
     #calculator_wrapper {
         display: grid;
         position: relative;
-        grid-template-columns: 1100px 1fr 500px 700px;
-        grid-template-rows: 100px 1fr 1fr 0.5fr;
+        grid-template-columns: 1200px 1fr 400px 800px;
+        grid-template-rows: 100px 1fr;
         grid-template-areas: 
         ".  cf .  . "
-        ".  cf c1 . "
-        ".  cf c2 . "
-        ".  cf rt . "
+        ".  cf if . "
         ;
     }
 
@@ -994,6 +1061,7 @@ li {
         width: 30vw;
         background-color: #2b2a33;
         padding: 10px;
+        border: 2px solid rgb(255, 115, 0);
     }
 
     #about_us_wrapper {

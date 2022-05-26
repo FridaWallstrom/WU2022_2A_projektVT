@@ -87,49 +87,41 @@
                     <button type="submit" class="button">Submit</button>
                 </ul>
         </form>
-        <section id="result">
-            <h2>The stock's estimated value is: <span style="color: rgb(255, 115, 0);">Xkr/stock</span></h2>
-            <h3>This means that the stock is currently overpriced</h3>
-        </section>
 
-        <br>
+        <section id="info">
+            <section id="result" class="explanation">
+                <h2>The stock's estimated value is: <span style="color: rgb(255, 115, 0);">Xkr/stock</span></h2>
+                <h3>This means that the stock is currently overpriced</h3>
+            </section>
+    
+            <br>
 
-        <section class="explanation" id="calc_exp1">
-            <h2 class="explanation_title">How does SVC work?</h2>
-            <p class="exp_text">
-                Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Animi cum, saepe soluta 
-                reiciendis sequi nisi recusandae ipsam fug
-                iat vitae distinctio architecto enim error 
-                sapiente facilis fuga! Harum, laborum amet?
-                Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Animi cum, saepe soluta 
-                reiciendis sequi nisi recusandae ipsam fug
-                iat vitae distinctio architecto enim error 
-                sapiente facilis fuga! Harum, laborum amet?
-            </p>
-        </section>
-        <section class="explanation" id="calc_exp2">
-            <h2 class="explanation_title">ATTENTION</h2>
-            <p class="exp_text" id="exp_at">
-                Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Animi cum, saepe soluta 
-                reiciendis sequi nisi recusandae ipsam fug
-                iat vitae distinctio architecto enim error 
-                sapiente facilis fuga! Harum, laborum amet?
-                reiciendis sequi nisi recusandae ipsam fug
-                iat vitae distinctio architecto enim error 
-                sapiente facilis fuga! Harum, laborum amet?
-                Animi cum, saepe soluta 
-                reiciendis sequi nisi recusandae ipsam fug
-                iat vitae distinctio architecto enim error 
-                sapiente facilis fuga! Harum, laborum amet?
-                reiciendis sequi nisi recusandae ipsam fug
-                iat vitae distinctio architecto enim error 
-                sapiente sapiente facilis fuga! Harum, 
-            </p>
-        </section>
+            <section class="explanation">
+                <h2 class="explanation_title">How does SVC work?</h2>
+                <p class="exp_text">
+                    On the market today, there are few calculators that can estimate the value of shares, and it is therefore difficult and time-consuming for individuals to familiarize themselves with shares and the stock market. This website is designed to, based on calculations and data that is either available on the internet or subjective estimates,  calculate the value of an individual share and thus facilitate in deciding whether a share has a reasonable price or not.
+                </p>
+            </section>
 
+            <section class="explanation">
+                <h2 class="explanation_title">Calculations</h2>
+                <div id="calc_wrapper">
+                    <h3>Weighted Average Cost of Capital</h3>
+                    <img src="img/calc.png" alt="kalkylering" class="calculation_img">
+                    <h3>Discounted Cash Flow</h3>
+                    <img src="img/calc2.png" alt="kalkylering" class="calculation_img">
+                    <h3>Cost of Equity</h3>
+                    <img src="img/calc3.png" alt="kalkylering" class="calculation_img">
+                </div>
+            </section>
+
+            <section class="explanation">
+                <h2 class="explanation_title">ATTENTION</h2>
+                <p id="exp_at">
+                    SVC do not cover misuse, accidents, lightning, flood, tornado, tsunami, volcanic eruption, earthquake, hurricanes and other Acts of God, neglect, damage from improper or unauthorized repair, incorrect line voltage, broken antenna or marred cabinet, missing or altered serial numbers, electromagnetic radiation from nuclear blasts, sonic boom vibrations, customer adjustments that are not covered in this joke list, and incidents owing to airplane crash, ship sinking, motor vehicle accidents, dropping the item, falling rocks, torpedoes, or emissions of X-rays, Alpha, Beta and Gamma rays, knives, sticks and stones, et. al.)  
+                </p>
+            </section>
+        </section>
     </div>
     <script src="js/script.js"></script>
 </body>
